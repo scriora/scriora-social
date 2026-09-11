@@ -1,4 +1,4 @@
-﻿name: CodeQL - Code Quality
+name: CodeQL - Code Quality
 
 on:
   pull_request:
@@ -19,7 +19,7 @@ jobs:
     name: CodeQL - Code Quality
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: github/codeql-action/init@v3
         with:
           languages: javascript-typescript

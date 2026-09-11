@@ -13,7 +13,7 @@ jobs:
     name: contribution-checker / cla
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: contributor-assistant/github-action@v2.6.1
         env:
           GITHUB_TOKEN: ${{ secrets.CLA_TOKEN }}
